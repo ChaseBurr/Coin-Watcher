@@ -1,0 +1,52 @@
+.coin_grid {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.coin_card {
+     width: 100%;
+     border-top: 1px solid gray;
+     justify-content: space-between;
+     padding: 15px 20px;
+     display: grid;
+     grid-template-columns: repeat(6, calc(100% / 6));
+     justify-items: left;
+
+     .multi_item {
+          display: flex;
+          align-items: center;
+
+          p {
+               text-transform: capitalize;
+          }
+
+          img {
+               margin-right: 2px;
+               width: 15px;
+               height: 15px;
+          }
+     }
+
+     &:nth-child(odd) {
+          background-color: rgb(249, 249, 249);
+     }
+     &:nth-child(even) {
+          background-color: white;
+     }
+}
+
+.coin_header {
+     width: 100%;
+     padding: 15px 20px;
+     background-color: white;
+     display: grid;
+     grid-template-columns: repeat(6, calc(100% / 6));
+     justify-items: left;
+}
+
+.up_carpet {
+     color: green;
+}
+.down_carpet {
+     color: red;
+}
